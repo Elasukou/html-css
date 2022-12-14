@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas com HTML5</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        mark {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Listas Ordenadas</h1>
+    <p>Para criarmos lista ordenada (orderd list), usamos a tag <code>&lt;ol&gt;</code> para delimitar a lista e <code>&lt;li&gt;</code> (list item) para indentificar cada item da lista.</p>
+    <p>A tag <code>&lt;ol&gt;</code> possui um parâmetro type (tipo), onde configuramos o tipo de marcador da lista atual. Podemos indicar o ínicio da contagem usando o parâmetro <em>start.</em></p>
+    <h2>Listas numeradas.</h2>
+    <p>Para criar listas numeradas ultizamos o <em><mark>TYPE 1.</mark></em></p>
+    <pre>
+        <code>
+&lt;ol type = "1" start = "6"&gt; &lt;!--a tag start indica em qual contagem a lista vai começar.--&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+&lt;/ol&gt;
+        </code>
+    </pre>
+    <ol type="1" start="6"> <!--a tag start indica qual contagem a lista vai começar.-->
+        <li>Item 1</li> <!--O /li se tornou opcional a partir do HTML5-->
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h2>Listas alfabéticas em <em>maiúsculo.</em></h2>
+    Para criar listas alfabeticas maiúsculas ultizamos o <mark><em>TYPE A.</em></mark>
+    <code>
+        <pre>
+&lt;ol type = "A" start = "1"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+&lt;/ol&gt;
+        </pre>
+    </code>
+    <ol type="A" start="1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h2>Listas alfabeticas em <em>minúsculo.</em></h2>
+    <p>Para criar listas alfabeticas minúsculas ultizamos o <mark><em>TYPE a.</em></mark></p>
+    <pre>
+        <code>
+&lt;ol type = "a" start = "2"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+&lt;/ol&gt;
+        </code>
+    </pre>
+    <ol type="a" start="2">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h2>Lista com algarismos romanos em maiúsculo.</h2>
+    <p>Para criar listas em algarismos romanos em maiúsculas ultizamos o <mark><em>TYPE I.</em></mark></p>
+    <pre>
+        <code>
+&lt;ol type = "I" start = "3"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+&lt;/ol&gt;
+        </code>
+    </pre>
+    <ol type="I" start="3">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <h2>Listas com algarismos romanos minúsculo.</h2>
+    <p>Para criar listas em algarismos romanos minúsculas ultizamos o <mark><em>TYPE i.</em></mark></p>
+    <pre>
+        <code>
+&lt;ol type = "i" start = "4"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+&lt;/ol&gt;
+        </code>
+    </pre>
+        <ol type="i" start="4">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+    <h1>Listas não Ordenadas</h1>
+    <p>Para criarmos uma unordered list, usamos a tag <code>&lt;ul&gt;</code> para delimitar a lista e a tag <code>&lt;li&gt;</code> para criar cada um de seus itens internos.</p>
+        <pre>
+            <code>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+&lt;/ul&gt;
+            </code>
+        </pre>
+
+    <p>O marcador padrão é uma bolinha preta totalmente preenchida (circle), mas existe a opção de configurar a propiedade type da tag &lt;ul&gt; com os seguintes valores:</p>
+    <ul type = "square">
+        <li>disc - padrão.</li>
+        <li>circle - Uma bola borda preta e sem preenchimento.</li>
+        <li>square - Um pequeno quadrado totalmente pintado.</li>
+    </ul>
+    <p>Ficando:</p>
+    <pre>
+        <code>
+&lt;ul type = "square"&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+&lt;/ul&gt;
+        </code>
+    </pre>
+    <h1>Listas Mistas</h1>
+    <p>Podemos também criar listas mistas, configurando listas dentro de outras listas.</p>
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ol type="a">
+            <li>Item 2.1</li>
+            <li>Item 2.2</li>
+            <li>Item 2.3</li>
+        </ol>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ol>
+    <p>Também podemos juntar listas ordenadas com não ordenadas.</p>
+    <ol type="1">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <ul type = "square">
+            <li>Item 2.1</li>
+            <li>Item 2.2</li>
+        </ul>
+        <li>Item 3</li>
+    </ol>
+</body>
+</html>

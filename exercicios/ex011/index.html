@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens Flexiveis</h1>
+    <p>Sabemos que os sites podem ser acessados por diversos dispositivos diferentes, com tamanhos diferentes. Ex.: smarthphone, tablets, e computador desktop. E precisamos adaptar o tamanho das imagens para cada um deles.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/dobronxcell.png" type="image/png">  
+        <source media="(max-width: 1250px)" srcset="imagens/dobronxtablet.png" type="image/png">
+        <img src="imagens/dobronx.png" alt="Imagem fléxivel está funcionando">
+    </picture>
+</body>
+</html>
